@@ -8,7 +8,7 @@ from list_def import *
 
 listAppType = ['DESKTOPWIN', 'DESKTOPMAC', 'IOSIPAD', 'CHROMEOS']
 try:
-    dhenzaSelfbot = None
+    IdioticSelfbot = None
     if args.apptype:
         tokenPath = Path('authToken.txt')
         if tokenPath.exists():
@@ -67,15 +67,15 @@ if dhenzaSelfbot:
 else:
     sys.exit('[ System Message ] - Login Failed.')
     
-oepoll = OEPoll(dhenzaSelfbot)
-call = dhenzaSelfbot
+oepoll = OEPoll(idioticSelfbot)
+call = Idioticbot
 creator = ["ub1c5a71f27b863896e9d44bea857d35b"]
-owner = ["ub1c5a71f27b863896e9d44bea857d35b"]
-admin = ["ub1c5a71f27b863896e9d44bea857d35b"]
+owner = ["u47a5a04d2d29284d90aa79e02cf4917a"]
+admin = ["u47a5a04d2d29284d90aa79e02cf4917a"]
 staff = ["ub1c5a71f27b863896e9d44bea857d35b"]
-mid = dhenzaSelfbot.getProfile().mid
+mid = IdioticSelfbot.getProfile().mid
 Bots = [mid]
-AKU = [dhenzaSelfbot]
+AKU = [idioticSelfbot]
 TEAMBOTPROTECT = admin + owner + staff
 Team = owner + admin + Bots + staff
 Setbot = codecs.open("setting.json","r","utf-8")
@@ -90,7 +90,7 @@ protectinvite = []
 protectcancel = []
 protectantijs = []
 
-responsename = dhenzaSelfbot.getProfile().displayName
+responsename = idioticSelfbot.getProfile().displayName
 
 settings = {
     "userAgent": ['Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1667.0 Safari/537.36'],
