@@ -8,7 +8,7 @@ from list_def import *
 
 listAppType = ['DESKTOPWIN', 'DESKTOPMAC', 'IOSIPAD', 'CHROMEOS']
 try:
-    dhenzaSelfbot = None
+    IdioticSelfbot = None
     if args.apptype:
         tokenPath = Path('authToken.txt')
         if tokenPath.exists():
@@ -67,15 +67,15 @@ if dhenzaSelfbot:
 else:
     sys.exit('[ System Message ] - Login Failed.')
     
-oepoll = OEPoll(dhenzaSelfbot)
-call = dhenzaSelfbot
-creator = ["ub1c5a71f27b863896e9d44bea857d35b"]
-owner = ["ub1c5a71f27b863896e9d44bea857d35b"]
-admin = ["ub1c5a71f27b863896e9d44bea857d35b"]
-staff = ["ub1c5a71f27b863896e9d44bea857d35b"]
-mid = dhenzaSelfbot.getProfile().mid
+oepoll = OEPoll(idioticSelfbot)
+call = idioticSelfbot
+creator = ["u47a5a04d2d29284d90aa79e02cf4917a"]
+owner = ["u47a5a04d2d29284d90aa79e02cf4917a"]
+admin = ["u47a5a04d2d29284d90aa79e02cf4917a"]
+staff = ["u47a5a04d2d29284d90aa79e02cf4917a"]
+mid = idioticSelfbot.getProfile().mid
 Bots = [mid]
-AKU = [dhenzaSelfbot]
+AKU = [idioticSelfbot]
 TEAMBOTPROTECT = admin + owner + staff
 Team = owner + admin + Bots + staff
 Setbot = codecs.open("setting.json","r","utf-8")
@@ -90,7 +90,7 @@ protectinvite = []
 protectcancel = []
 protectantijs = []
 
-responsename = dhenzaSelfbot.getProfile().displayName
+responsename = idioticSelfbot.getProfile().displayName
 
 settings = {
     "userAgent": ['Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1667.0 Safari/537.36'],
@@ -298,13 +298,13 @@ try:
 except:
     print("Couldn't read Log data")
     
-dhenzaSelfbotProfile = dhenzaSelfbot.getProfile()
-myProfile["displayName"] = dhenzaSelfbotProfile.displayName
-myProfile["statusMessage"] = dhenzaSelfbotProfile.statusMessage
-myProfile["pictureStatus"] = dhenzaSelfbotProfile.pictureStatus
+IdioticSelfbotProfile = idioticSelfbot.getProfile()
+myProfile["displayName"] = idioticSelfbotProfile.displayName
+myProfile["statusMessage"] = idioticSelfbotProfile.statusMessage
+myProfile["pictureStatus"] = idioticSelfbotProfile.pictureStatus
 
-contact = dhenzaSelfbot.getProfile()
-backup = dhenzaSelfbot.getProfile()
+contact = idioticSelfbot.getProfile()
+backup = idioticSelfbot.getProfile()
 backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
@@ -420,8 +420,8 @@ def restoreProfile():
     profile.statusMessage = settings['myProfile']['statusMessage']
     if settings['myProfile']['videoProfile'] == None:
         profile.pictureStatus = settings['myProfile']['pictureStatus']
-        dhenzaSelfbot.updateProfileAttribute(8, profile.pictureStatus)
-        dhenzaSelfbot.updateProfile(profile)
+        IdioticSelfbot.updateProfileAttribute(8, profile.pictureStatus)
+        IdioticSelfbot.updateProfile(profile)
     else:
         dhenzaSelfbot.updateProfile(profile)
         pict = dhenzaSelfbot.downloadFileURL('http://dl.profile.line-cdn.net/' + settings['myProfile']['pictureStatus'], saveAs="tmp/pict.bin")
@@ -1297,7 +1297,7 @@ def bot(op):
                         dhenzaSelfbot.kickoutFromGroup(op.param1,[op.param2])
                     except:
                         try:
-                            dhenzaSelfbot.kickoutFromGroup(op.param1,[op.param2])
+                            dhenzaSelfbot. No(op.param1,[op.param2])
                         except:
                             try:
                                 dhenzaSelfbot.kickoutFromGroup(op.param1,[op.param2])
@@ -2065,7 +2065,7 @@ def bot(op):
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)                                
-                                md = "│╔══[ TΣΔM βΩT PRΩTΣCTsᴋ ] \n"                                
+                                md = "│╔══[ Idiotic SelfBot ᴋ ] \n"                                
                                 if wait["sticker"] == True: md+="│╠══[  ON  ] sᴛɪᴄᴋᴇʀ✔️\n"
                                 else: md+="│╠══[ OFF ] sᴛɪᴄᴋᴇʀ❌\n"
                                 if wait["contact"] == True: md+="│╠══[  ON  ] ᴄᴏɴᴛᴀᴄᴛ✔️\n"
@@ -2098,8 +2098,9 @@ def bot(op):
                                 else: md+="│╠══[ OFF ] ᴊs❌\n"                                
                                 if msg.to in protectcancel: md+="│╠══[  ON  ] ᴘʀᴏᴛᴇᴄᴛᴄᴀɴᴄᴇʟ✔️\n"
                                 else: md+="│╠══[ OFF ] ᴘʀᴏᴛᴇᴄᴛᴄᴀɴᴄᴇʟ❌\n"
-                                md+= "│╚══[ TΣΔM βΩT PRΩTΣCTsᴋ ]"
-                                md+= " https://www.youtube.com/channel/UCNLejYy84XyUX8qcDropXMw"
+                                md+= "│╚══[ idiotic Selfbot
+ᴋ ]"
+                                md+= " "
                                 dhenzaSelfbot.sendMessage(msg.to, md+"\n│ᴛᴀɴɢɢᴀʟ : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n│ᴊᴀᴍ  "+ datetime.strftime(timeNow,'%H:%M:%S')+" ")   
                                 
                           
@@ -2129,7 +2130,7 @@ def bot(op):
                                dhenzaSelfbot.sendMessage(msg.to, msg._from)
                                
                         elif text.lower() == "dz":
-                               dhenzaSelfbot.sendMessage(msg.to, "hallo jangan lupa di subscribe ya kk chanel kita\n https://www.youtube.com/channel/UCNLejYy84XyUX8qcDropXMw")
+                      
 
                         elif ("Get id " in msg.text):
                           if wait["selfbot"] == True:
