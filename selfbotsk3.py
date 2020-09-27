@@ -67,8 +67,8 @@ if dhenzaSelfbot:
 else:
     sys.exit('[ System Message ] - Login Failed.')
     
-oepoll = OEPoll(DhenzaSelfbot)
-call = IdioticSelfbot
+oepoll = OEPoll(dhenzaSelfbot)
+call = idioticSelfbot
 creator = ["u47a5a04d2d29284d90aa79e02cf4917a"]
 owner = ["u47a5a04d2d29284d90aa79e02cf4917a"]
 admin = ["u47a5a04d2d29284d90aa79e02cf4917a"]
