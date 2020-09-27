@@ -2055,7 +2055,7 @@ def bot(op):
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)                                
-                                md = "│╔══[ TΣΔM βΩT PRΩTΣCTsᴋ ] \n"                                
+                                md = "│╔══[ Idiotic Satanic ] \n"                                
                                 if wait["sticker"] == True: md+="│╠══[  ON  ] sᴛɪᴄᴋᴇʀ✔️\n"
                                 else: md+="│╠══[ OFF ] sᴛɪᴄᴋᴇʀ❌\n"
                                 if wait["contact"] == True: md+="│╠══[  ON  ] ᴄᴏɴᴛᴀᴄᴛ✔️\n"
@@ -2088,7 +2088,7 @@ def bot(op):
                                 else: md+="│╠══[ OFF ] ᴊs❌\n"                                
                                 if msg.to in protectcancel: md+="│╠══[  ON  ] ᴘʀᴏᴛᴇᴄᴛᴄᴀɴᴄᴇʟ✔️\n"
                                 else: md+="│╠══[ OFF ] ᴘʀᴏᴛᴇᴄᴛᴄᴀɴᴄᴇʟ❌\n"
-                                md+= "│╚══[ Idiotic Satanicᴋ
+                                md+= "│╚══[ Idiotic Satanic ] \n"
                                 dhenzaSelfbot.sendMessage(msg.to, md+"\n│ᴛᴀɴɢɢᴀʟ : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n│ᴊᴀᴍ  "+ datetime.strftime(timeNow,'%H:%M:%S')+" ")   
                                 
                           
