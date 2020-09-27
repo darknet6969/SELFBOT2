@@ -67,15 +67,15 @@ if dhenzaSelfbot:
 else:
     sys.exit('[ System Message ] - Login Failed.')
     
-oepoll = OEPoll(dhenzaSelfbot)
-call = dhenzaSelfbot
+oepoll = OEPoll(IdioticSelfbot)
+call = IdioticSelfbot
 creator = ["u47a5a04d2d29284d90aa79e02cf4917a"]
 owner = ["u47a5a04d2d29284d90aa79e02cf4917a"]
 admin = ["u47a5a04d2d29284d90aa79e02cf4917a"]
 staff = ["u47a5a04d2d29284d90aa79e02cf4917a"]
-mid = dhenzaSelfbot.getProfile().mid
+mid = IdioticSelfbot.getProfile().mid
 Bots = [mid]
-AKU = [dhenzaSelfbot]
+AKU = [IdioticSelfbot]
 TEAMBOTPROTECT = admin + owner + staff
 Team = owner + admin + Bots + staff
 Setbot = codecs.open("setting.json","r","utf-8")
@@ -90,7 +90,7 @@ protectinvite = []
 protectcancel = []
 protectantijs = []
 
-responsename = idioticSelfbot.getProfile().displayName
+responsename = IdioticSelfbot.getProfile().displayName
 
 settings = {
     "userAgent": ['Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1667.0 Safari/537.36'],
