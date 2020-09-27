@@ -267,12 +267,13 @@ wait = {
             },
     "mention":"nah loh ketahuan ngintip msh aja sider",
     "Respontag":"Apa syang 😍 ",
-    "welcome":"Wellcome to my fans"
-
-    "readPoint":{},
-    "readMember":{},
-    "readTime":{},
-    "ROM":{},
+    "welcome":"Wellcome to my fams"
+}
+read = { 
+    "readPoint": {},
+    "readMember": {},
+    "readTime": {},
+    "ROM": {},
 }
 
 cctv = {
