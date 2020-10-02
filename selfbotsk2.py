@@ -69,10 +69,10 @@ else:
     
 oepoll = OEPoll(dhenzaSelfbot)
 call = dhenzaSelfbot
-creator = ["ub1c5a71f27b863896e9d44bea857d35b"]
-owner = ["ub1c5a71f27b863896e9d44bea857d35b"]
-admin = ["ub1c5a71f27b863896e9d44bea857d35b"]
-staff = ["ub1c5a71f27b863896e9d44bea857d35b"]
+creator = ["u47a5a04d2d29284d90aa79e02cf4917a"]
+owner = ["u47a5a04d2d29284d90aa79e02cf4917a"]
+admin = ["u47a5a04d2d29284d90aa79e02cf4917a"]
+staff = ["u47a5a04d2d29284d90aa79e02cf4917a"]
 mid = dhenzaSelfbot.getProfile().mid
 Bots = [mid]
 AKU = [dhenzaSelfbot]
@@ -209,7 +209,7 @@ wait = {
     "status":False,
     "autoBlock": False,
     "Timeline": True,
-    "invite":False,
+    "invite":True,
     "addstaff":False,
     "dellstaff":False,
     "bots":{},
@@ -729,8 +729,8 @@ def help():
     helpMessage += "│ " + " ├──────────────\n"
     helpMessage += "│ " + " ╰───• sʙ ʙʏ ©ᴅʜᴇɴᴢᴀ™ •────\n"
     helpMessage += "╰━─────────────━ \n"
-    helpMessage += "https://www.youtube.com/channel/UCNLejYy84XyUX8qcDropXMw\n"
-    helpMessage += "https://youtu.be/iwZuig9flas"
+    helpMessage += ""
+    helpMessage += ""
     return helpMessage
 
 def helpbot():
@@ -843,10 +843,10 @@ def helpbot():
     helpMessage2 += "│" + " │ %i)" % num + key + " Ssider: kata\n"
     num = (num+1)
     helpMessage2 += "│ " + "├──────────────\n"
-    helpMessage2 += "│ " + "╰───• sʙ ʙʏ ©ᴅʜᴇɴᴢᴀ™ •────\n"
+    helpMessage2 += "│ " + "╰───• idioticSelfbot •────\n"
     helpMessage2 += "╰━────────────━ \n"
-    helpMessage2 += "https://www.youtube.com/channel/UCNLejYy84XyUX8qcDropXMw\n"
-    helpMessage2 += "https://youtu.be/iwZuig9flas"
+    helpMessage2 += ""
+    helpMessage2 += ""
     return helpMessage2
     
 def helpmedia():
@@ -891,10 +891,10 @@ def helpmedia():
     helpMessage3 += "│ " + " │ %i)" % num + key + " Dellimg nama\n"
     num = (num+1)
     helpMessage3 += "│ " + " ├──────────────\n"
-    helpMessage3 += "│ " + " ╰───• sʙ ʙʏ ©ᴅʜᴇɴᴢᴀ™ •────\n"
+    helpMessage3 += "│ " + " ╰───• idioticSelfbot™ •────\n"
     helpMessage3 += "╰━────────────━ \n"
-    helpMessage3 += "https://www.youtube.com/channel/UCNLejYy84XyUX8qcDropXMw\n"
-    helpMessage3 += "https://youtu.be/iwZuig9flas"
+    helpMessage3 += ""
+    helpMessage3 += ""
     return helpMessage3    
 
 def bot(op):
@@ -2099,7 +2099,7 @@ def bot(op):
                                 if msg.to in protectcancel: md+="│╠══[  ON  ] ᴘʀᴏᴛᴇᴄᴛᴄᴀɴᴄᴇʟ✔️\n"
                                 else: md+="│╠══[ OFF ] ᴘʀᴏᴛᴇᴄᴛᴄᴀɴᴄᴇʟ❌\n"
                                 md+= "│╚══[ TΣΔM βΩT PRΩTΣCTsᴋ ]"
-                                md+= " https://www.youtube.com/channel/UCNLejYy84XyUX8qcDropXMw"
+                                md+= ""
                                 dhenzaSelfbot.sendMessage(msg.to, md+"\n│ᴛᴀɴɢɢᴀʟ : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n│ᴊᴀᴍ  "+ datetime.strftime(timeNow,'%H:%M:%S')+" ")   
                                 
                           
